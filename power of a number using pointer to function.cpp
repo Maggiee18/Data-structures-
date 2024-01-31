@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-// Function to calculate the power of a number
 int power(int base, int exponent) {
     int result = 1;
 
@@ -10,8 +8,6 @@ int power(int base, int exponent) {
 
     return result;
 }
-
-// Function pointer declaration
 typedef int (*PowerFunction)(int, int);
 
 int main() {
