@@ -1,16 +1,14 @@
 #include <stdio.h>
 
-void reverseString(char *str) {
-    char *start = str;
-    char *end = str;
+void reverse_String(char *string) {
+    char *start = string;
+    char *end = string;
 
-    // Move the end pointer to the end of the string
     while (*end != '\0') {
         end++;
     }
     end--;
 
-    // Swap characters from start to end
     while (start < end) {
         char temp = *start;
         *start = *end;
@@ -22,14 +20,14 @@ void reverseString(char *str) {
 }
 
 int main() {
-    char str[100];
+    char string[100];
 
     printf("Enter a string: ");
-    scanf("%s", str);
+    scanf("%s", string);
 
-    reverseString(str);
+    reverse_String(string);
 
-    printf("Reversed string: %s\n", str);
+    printf("Reversed string is %s\n", string);
 
     return 0;
 }
