@@ -2,7 +2,7 @@
 int main()
 { 
 int n;
-printf("Enter the numbers of elements:");
+printf("Enter the number of elements:");
 scanf("%d",&n);
  
  int arr[n],i;
