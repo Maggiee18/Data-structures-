@@ -7,9 +7,10 @@ int main()
     
     int arr[n];
     printf("Enter %d elements (in ascending order): ", n);
-    for(i=0; i<n; i++)
+    for(i=0; i<n; i++){
         scanf("%d", &arr[i]);
-        
+    }
+    
     printf("Enter the element you want to search: \n");
     scanf("%d", &search);
     first = 0;
