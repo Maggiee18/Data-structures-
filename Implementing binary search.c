@@ -7,13 +7,13 @@ int main()
     
     int arr[n];
     printf("Enter %d elements (in ascending order): ", n);
-    for(i=0; i<10; i++)
+    for(i=0; i<n; i++)
         scanf("%d", &arr[i]);
         
     printf("Enter the element you want to search: \n");
     scanf("%d", &search);
     first = 0;
-    last = 9;
+    last = n-1;
     middle = (first+last)/2;
     
     while(first <= last)
